@@ -16,7 +16,8 @@ services:
       - 38083:38083
     volumes:
       - /path_to_your_wallet_dir/:/monero/wallet
-    command: 
+    command:
+        # For reference see: https://github.com/chekist32/monero-wallet-rpc-docker/blob/master/docs/monero-wallet-rpc-man.md
       - "--stagenet" 
       - "--daemon-address=stagenet.community.rino.io:38081"
       - "--trusted-daemon"
