@@ -5,8 +5,8 @@ https://hub.docker.com/r/chekist32/monero-wallet-rpc
 
 ## Example usage
 
-```docker-compose.yaml```
-```yaml
+```docker-compose.yml```
+```yml
 version: '3'
 
 services:
