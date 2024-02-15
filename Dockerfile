@@ -6,7 +6,7 @@ RUN apt update && apt install -y lbzip2 curl gpg
 
 WORKDIR /monero
 COPY build_init.sh build_init.sh 
-RUN bash build_init.sh ${TARGETPLATFORM}
+RUN bash fetch_script.sh ${TARGETPLATFORM}
 
 
 FROM debian:stable-slim
