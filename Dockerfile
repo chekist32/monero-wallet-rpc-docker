@@ -5,7 +5,7 @@ ARG TARGETPLATFORM
 RUN apt update && apt install -y lbzip2 curl gpg
 
 WORKDIR /monero
-COPY build_init.sh build_init.sh 
+COPY fetch_script.sh fetch_script.sh 
 RUN bash fetch_script.sh ${TARGETPLATFORM}
 
 
